@@ -3,22 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Library</title>
+    <title>Your Name - Personal Site</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-        h1 { color: #333; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
-        a { color: #1a73e8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        main {
+            padding: 2rem 0;
+        }
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .document-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .document-item:hover {
+            transform: translateY(-5px);
+        }
+        .document-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .document-item a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .document-item a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Document Library</h1>
-    <ul>
-        <li><a href="CV/Resume">CV/Resume</a></li>
-        <li><a href="Portfolio">Portfolio</a></li>
-        <li><a href="Other Document">Other Document</a></li>
-    </ul>
+    <header>
+        <div class="container">
+            <h1>Oriol Bustos</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="sections/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="documents">
+                <h2>Document Library</h2>
+                <div class="document-grid">
+                    <div class="document-item">
+                        <img src="documents/cv_banner.png" alt="CV/Resume">
+                        <h3>CV/Resume</h3>
+                        <a href="documents/CV_OriolBustos.pdf" target="_blank">View CV</a>
+                    </div>
+                    <div class="document-item">
+                        <img src="documents/GH_banner.png" alt="Portfolio">
+                        <h3>Portfolio</h3>
+                        <a href="https://github.com/oriol-bustos" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="document-item">
+                        <img class="document-img" src="documents/docs_icon.jpg" alt="Other Document">
+                        <h3>Other Documents</h3>
+                        <a href="sections/other_documents.html" target="_blank">View Document</a>
+                    </div>
+                    <style>
+                        .document-img {
+                            width: 100px; /* Adjust the width as needed */
+                            height: auto; /* Maintain aspect ratio */
+                        }
+                    </style>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Oriol Bustos. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
