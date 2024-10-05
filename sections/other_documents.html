@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriol Bustos - Other Documents</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        main {
+            padding: 2rem 0;
+        }
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .document-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .document-item:hover {
+            transform: translateY(-5px);
+        }
+        .document-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .document-item a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .document-item a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oriol Bustos</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="other-documents">
+                <h2>Other Documents</h2>
+                <div class="document-grid">
+                    <div class="document-item">
+                        <img src="../documents/dtm_banner.png" alt="Document 1">
+                        <h3>24th Diabetes Technology Meeting, San Francisco Poster</h3>
+                        <a href="../documents/DTM_poster.pdf" target="_blank">View Document</a>
+                    </div>
+                    <div class="document-item">
+                        <img src="../documents/tfg_banner.png" alt="Document 2">
+                        <h3>Bachelor Thesis</h3>
+                        <a href="../documents/TFG_Bustos_Martinez_Oriol.pdf" target="_blank">View Document</a>
+                    </div>
+                    <div class="document-item">
+                        <img src="/api/placeholder/100/100" alt="Document 3">
+                        <h3>Document 3</h3>
+                        <a href="path/to/document3.pdf" target="_blank">View Document</a>
+                    </div>
+                    <!-- Add more document items as needed -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
