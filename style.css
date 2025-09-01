@@ -104,3 +104,16 @@ body{
 .hero-card {
   margin-bottom: 25px; /* adjust as you like */
 }
+.section-head .subtitle {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+.section-head .intro {
+  max-width: 680px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
